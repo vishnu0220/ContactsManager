@@ -1,0 +1,229 @@
+/* App.css - Keep existing styles for the page */
+
+/* Overall page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+/* Styling for the form */
+.contact-form {
+  background-color: #fff;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  /* background-color: #4CAF50; */ /* Default green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* .contact-form button:hover { */
+  /* background-color: #45a049; */
+/* } */
+
+.contact-form button:focus {
+  outline: none;
+}
+
+/* Add and View buttons container */
+.action-buttons {
+  display: flex;
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 10px;
+}
+
+.action-buttons button {
+  width: 48%; /* Adjusted to take up space side-by-side */
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.action-buttons .add-button {
+  background-color: #007bff; /* Blue */
+}
+
+.action-buttons .add-button:hover {
+  background-color: #218838;
+}
+
+.action-buttons .view-button {
+  background-color: #007bff; /* Green */
+}
+
+.action-buttons .view-button:hover {
+  background-color: #218838;
+}
+
+/* Styling for the contacts list */
+.contact-list {
+  margin-top: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: nowrap; /* Ensures no wrapping */
+}
+
+
+
+.contact-info .info {
+  flex: 0 0 60%; /* 60% of the width */
+  word-wrap: break-word; /* Prevents overflow */
+}
+
+.contact-info .setting-icon {
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%; /* Ensure buttons don't take full width */
+}
+
+.contact-info .edit-button,
+.contact-info .delete-button {
+  flex: 0 0 48%; /* Adjust the width */
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 4px; /* Space between buttons */
+}
+
+.contact-info .edit-button {
+  background-color: #28a745; /* Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-info .edit-button:hover {
+  background-color: #218838;
+}
+
+.contact-info .delete-button {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-info .delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.actions button:focus {
+  outline: none;
+}
+
+/* Styling for the contact item */
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 95%;
+}
+
+/* Styling for the contact content */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Styling for the setting icon */
+.setting-icon {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  margin-left: auto;
+  display: block;
+}
+
+/* Styling for buttons */
+.buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  display: inline-block;
+  color: white;
+}
+
+.edit-button {
+  background-color: #28a745;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+  background-color: #f44336;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
